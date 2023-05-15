@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head>
+			
+		<title>Drunken Druid</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+
+		<link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+		<script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+		
+
+			<link rel="stylesheet" href="../styles/obsidian-styles.css">
+			<link rel="stylesheet" href="../styles/plugin-styles.css">
+			<link rel="stylesheet" href="../styles/theme.css">
+			<link rel="stylesheet" href="../styles/snippets.css">
+
+			<style>  </style>
+			<style>  </style>
+
+			
+		<script id="relative-paths">
+			let rootPath = "..";
+			let mediaPath = "../media";
+			let jsPath = "../scripts";
+			let cssPath = "../styles";
+		</script>
+		
+			<!-- Graph View Data -->
+			<script>
+			let nodes=
+{"nodeCount":56,"linkCount":174,"radii":[7,7,7,6.927514792899408,6.866494082840237,6.6889792899408285,6.284023668639053,6.284023668639053,6.112056213017752,6.112056213017752,5.712647928994082,5.712647928994082,5.712647928994082,5.712647928994082,5.485207100591715,5.485207100591715,5.485207100591715,4.974852071005917,4.974852071005917,4.974852071005917,4.974852071005917,4.691937869822485,4.691937869822485,4.691937869822485,4.691937869822485,4.691937869822485,4.390532544378698,4.390532544378698,4.390532544378698,4.390532544378698,4.390532544378698,4.390532544378698,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,4.070636094674557,3.7322485207100593,3.7322485207100593,3.7322485207100593,3.7322485207100593,3.7322485207100593,3.7322485207100593,3.7322485207100593,3.375369822485207,3.375369822485207,3.375369822485207,3.375369822485207,3.375369822485207,3.375369822485207,3.375369822485207,3],"labels":["S03E01 - Invitation to a Royal Wedding","S03E03 - Manticore Attack","S03E02 - Operation Autumn Circle","S02E04 - Spirit of Mistlicah","S03E04 - What the FUCC?","Sirrus","Royal Wedding","S02E03 - Spirit of Mistlicah","processor","Tykolos","FUCC","S02E02 - Spirit of Mistlicah","Vanalos","Ainsley","The Feywild","Blue Rose Powder","Tobin","Operation Autumn Circle","satyr horn","Morthos","Suet","Lorna Brassborn","Lowel Brassborn","suspicious dryad","Princess Layla","Durvish","Campaign 3 - Superbig Empire Adventures","Brassborn family","Drunken Druid","Longsword of Lifestealing","Gwidian","Dunheads","Hawkwind Islands","Theresdun","Giordano","Lamberton","Ellie","Shubby","Echo","Vivaldi","Quonk","Tortle","lion-person","Superbig Empire City","hand-drawn map of the castle","Spirit of Mistlicah","Sochani","Charlemane","cat-person","Moon Dust","Gond","Kaylee","Tosani","Ted the orc","Zinfendel","Templeton"],"paths":["s03e01---invitation-to-a-royal-wedding.html","s03e03---manticore-attack.html","s03e02---operation-autumn-circle.html","s02e04---spirit-of-mistlicah.html","s03e04---what-the-fucc?.html","npcs/sirrus.html","locations-and-events/royal-wedding.html","s02e03---spirit-of-mistlicah.html","special-items/processor.html","player-characters/tykolos.html","races,-families,-and-organizations/fucc.html","s02e02---spirit-of-mistlicah.html","npcs/vanalos.html","player-characters/ainsley.html","locations-and-events/the-feywild.html","special-items/blue-rose-powder.html","player-characters/tobin.html","locations-and-events/operation-autumn-circle.html","special-items/satyr-horn.html","npcs/morthos.html","player-characters/suet.html","special-items/lorna-brassborn.html","special-items/lowel-brassborn.html","npcs/suspicious-dryad.html","npcs/princess-layla.html","npcs/durvish.html","campaign-3---superbig-empire-adventures.html","races,-families,-and-organizations/brassborn-family.html","locations-and-events/drunken-druid.html","special-items/longsword-of-lifestealing.html","npcs/gwidian.html","npcs/dunheads.html","locations-and-events/hawkwind-islands.html","npcs/theresdun.html","npcs/giordano.html","npcs/lamberton.html","npcs/ellie.html","npcs/shubby.html","npcs/echo.html","player-characters/vivaldi.html","player-characters/quonk.html","races,-families,-and-organizations/tortle.html","races,-families,-and-organizations/lion-person.html","locations-and-events/superbig-empire-city.html","special-items/hand-drawn-map-of-the-castle.html","special-items/spirit-of-mistlicah.html","npcs/sochani.html","player-characters/charlemane.html","races,-families,-and-organizations/cat-person.html","special-items/moon-dust.html","npcs/gond.html","npcs/kaylee.html","npcs/tosani.html","npcs/ted-the-orc.html","player-characters/zinfendel.html","player-characters/templeton.html"],"linkSources":[9,5,5,39,39,12,12,12,12,47,34,33,18,18,18,18,15,15,29,29,29,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,11,11,11,11,11,11,11,11,11,7,7,7,7,7,7,7,7,7,7,7,7,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,23,23,23,14,28,28,28,6,6,6,6,6,8,8,8,8,8,8,17,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10,10,10,22,22,22,21,21,21,26,26,26,26],"linkTargets":[12,10,15,41,6,9,18,10,5,42,15,31,12,9,3,5,14,5,16,9,4,45,13,48,38,46,9,18,35,42,47,5,16,36,40,52,19,19,35,16,9,40,13,38,49,36,3,5,45,31,35,16,29,13,36,38,24,46,0,9,44,32,6,16,39,13,21,20,22,5,33,31,19,8,41,27,24,25,9,13,16,54,37,24,19,31,33,6,5,20,14,23,15,25,8,30,12,10,50,20,13,16,9,5,37,30,14,10,15,12,6,25,19,51,15,34,14,9,43,25,17,24,32,17,8,5,5,17,2,20,13,14,8,5,53,13,5,43,24,20,34,23,15,32,14,19,28,25,17,8,6,22,21,27,44,30,9,16,40,14,12,5,37,30,6,27,20,6,27,13,0,2,1,4]};
+			let attractionForce = 1;
+			let linkLength = 10;
+			let repulsionForce = 150;
+			let centralForce = 3;
+			let edgePruning = 100;
+			</script>
+			
+<script type="module" src="../scripts/graph_view.js"></script>
+
+<script src="../scripts/graph_wasm.js"></script>
+
+<script src="../scripts/tinycolor.js"></script>
+
+<script src="../scripts/webpage.js"></script>
+
+			</head><body class="theme-dark mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;"><div class="flex-container"><div id="sidebar" class="sidebar-left"><div class="sidebar-content"><div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle"><div class="toggle__fill"></div></label></div></div></div><div class="center-content"><div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;"><div><h1 id="Drunken_Druid"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Drunken Druid</h1></div><div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"></div><div><p>A tavern in <a data-href="Superbig Empire City" href="../locations-and-events/superbig-empire-city.html" class="internal-link" target="_self" rel="noopener">Superbig Empire City</a>. This is where the party met with <a data-href="Durvish" href="../npcs/durvish.html" class="internal-link" target="_self" rel="noopener">Durvish</a> for the first time, and briefed on <a data-href="Operation Autumn Circle" href="../locations-and-events/operation-autumn-circle.html" class="internal-link" target="_self" rel="noopener">Operation Autumn Circle</a></p></div><div class="mod-footer"></div></div></div></div><div id="sidebar" class="sidebar-right"><div class="sidebar-content"><h6 style="margin: 1em 1em 1em 12px;">Interactive Graph</h6><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" width="512px" height="512px"></canvas>
+		</div>
+		</div><div class="outline-container" data-size="0"><div class="outline-header"><h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Drunken_Druid"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">Drunken Druid</span></a><div class="outline-item-children"></div></div></div></div></div></div></body></html>
